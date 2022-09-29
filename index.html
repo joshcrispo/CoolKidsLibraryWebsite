@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--This is the home page of my library reservation system-->
+        <title>Homepage</title>
+        <!--Links CSS file to websites-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--Header of the page-->
+        <header>
+            <h1 class=header>Cool kids library</h1>
+            <h2 class='login'><button><a href='Login.php'>Login</a></button></h2>
+        </header>
+    <h1>Welcome to the best Library known to man!</h1>
+    <!--Image embedding-->
+    <img src="" id="image">
+
+    <!--This script navigates through images randonmly-->
+    <script type="text/javascript">
+        let image = document.getElementById('image');
+        let images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg']
+        setInterval(function(){
+            let random = Math.floor(Math.random() * 4);
+            image.src = images[random];
+        }, 800);
+    </script>
+    </body>
+    <!--footer of the page-->
+    <footer>
+        <div class="foot">Website Created by: Joshua AL Rasbi © 2021</div>
+    </footer>
+</html>
